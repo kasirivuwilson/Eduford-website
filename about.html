@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="Eduford Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <img src="images/close-bars.png" alt="close icon" class="fa fa-times" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <img src="images/menu-bars.png" style="width:35px; height:35px;" alt="Home icon" class="fa fa-bars" onclick="showMenu()">
+            </nav>
+           <h1>About Us</h1>
+        </section> 
+
+        <!-----------about us content------- -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Obcaecati labore a praesentium consequatur provident
+                          maiores sapiente ut! Necessitatibus vel, dicta asperiores
+                           placeat quibusdam dolores praesentium. Est, tenetur 
+                           magnam officiis amet dolor quos provident illo incidunt,
+                            mollitia excepturi a? Modi, doloremque?</p>
+                            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="About image">
+                </div>
+            </div>
+        </section>
+<!--------- Footer--------->   
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis rem consectetur sed iure animi aliquid molestiae
+         vitae possimus <br>explicabo pariatur. Error, modi. At, laborum
+         repellendus id quod sequi accusantium maiores.</p>
+         <div class="icons">
+            <img src="images/fb_icon.png" alt="facebook icon" class="fa fa-facebook"></img>
+            <img src="images/twitter-icon.png" alt="twitter icon" class="fa fa-twitter"></img>
+            <img src="images/instagram-icon.png" alt="instagram icon" class="fa fa-instagram"></img>
+            <img src="images/linkedin_icon.png" alt="linkedin_icon" class="fa fa-linkedin"></img>
+         </div>
+         <p>Made with <img src="images/heart.png" style="width:15px; height:15px; padding:20px 10px 10px; padding-bottom: 0px;" alt="heart icon" class="fa fa-heart-o"></img>by Easy Tutorials</p>
+</section>
+
+        <script>
+             
+             var navLinks = document.getElementById("navLinks");
+             function showMenu(){
+                navLinks.style.right = "0";
+             }
+             function hideMenu(){
+                navLinks.style.right = "-200px";
+             }
+        </script>
+    </body>
+</html>
